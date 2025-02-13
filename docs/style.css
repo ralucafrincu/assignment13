@@ -1,0 +1,62 @@
+* {
+    color: #563f8e;
+}
+body {
+    font-family: "Berkshire Swash", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #cfc3ef;
+}
+h1 {
+    margin-bottom: 20px;
+    color: #563f8e;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+.cell {
+    background: #f1d5da;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    box-shadow: 2px 2px 7px 5px rgba(86, 63, 142, 0.82);
+}
+.cell:hover {
+    background: rgba(111, 94, 152, 0.30);
+}
+.winner {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    color: #563f8e;
+    font-family: "Berkshire Swash", serif;;
+}
+
+#restart {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#restart img {
+    width: 50px;
+    height: 50px;
+}
